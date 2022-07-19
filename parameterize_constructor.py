@@ -15,5 +15,5 @@ class animal:
 # Khởi tạo đối tượng "dog" của class "Animal"
 # Parameterized constructor cần phải truyền thông số vào
 dog = animal(4)
-print(dog.legs_num)
-dog.print_legs()
+print(dog.legs_num) # print attribute in __init__ of class
+dog.print_legs() # call function in class

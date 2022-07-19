@@ -4,10 +4,6 @@
 
 class Dad:
     fatherName = ""
-
-    def __init__(self, fatherName):
-        self.fatherName = fatherName
-
     def returnName(self):
         print(self.fatherName)
 
@@ -18,9 +14,11 @@ class Mom:
 
 # Thực hiện kế thừa 2 class, class Son có thể kế thừa được 2 class cha bao gồm: class Dad và class Mom
 class Son(Dad, Mom):
-    def parentsName(self):
+    def sonName(self):
         print(self.fatherName)
         print(self.motherName)
 
-dad = Dad("kien")
-dad.returnName()
+son = Son()
+son.fatherName = "A"
+son.motherName = "B"
+son.sonName()
